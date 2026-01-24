@@ -1,16 +1,6 @@
-const events = require("events");
+const fs =require("fs");
 
-const{EventEmitter} = events;
+const readStream = fs.createReadStream("./data.txt");
+const writeStream = fs.createWriteStream("output.txt");
 
-const eventEmitter = new EventEmitter();
-
-//register an event
-eventEmitter.on("event-1", function(obj){
-    console.log("Hi there");
-    console.log(obj);
-});
-
-console.log("i am sync");
-
-//emit or raise an event
-eventEmitter.emit("event-1",{msg:"by there", })
+readStream.pipe(writeStream);
