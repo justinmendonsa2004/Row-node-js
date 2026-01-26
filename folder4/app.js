@@ -12,6 +12,5 @@ eventEmitter.on("event-1", function(content){
         console.log("File created succesfully");
     }
    });
-   
 });
 module.exports= eventEmitter;
