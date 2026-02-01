@@ -1,3 +1,6 @@
+
+//os
+
 const os =require("os");
 
 let typeofos = os.type();

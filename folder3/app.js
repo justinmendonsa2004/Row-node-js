@@ -1,0 +1,12 @@
+
+//fs
+
+const fs = require("fs");
+fs.writeFileSync("test.txt","by there")//create file then inert the value
+
+fs.appendFileSync("test.txt"," hi there")//update file.
+
+let data = fs.readFileSync("./test.txt")//, {encoding: "utf-8"});
+console.log(data.toString());//print text
+
+fs.unlinkSync("./test.txt");//delete file.
