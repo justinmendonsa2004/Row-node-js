@@ -1,1 +1,3 @@
-console.log("by there");
+let func1 = require("./first");
+
+func1();

@@ -1,2 +1,1 @@
-console.log("hi there");
-console.log(10 +20);
+console.log("hi justin");
